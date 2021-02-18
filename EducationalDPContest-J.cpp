@@ -18,12 +18,12 @@ double rec(int c1, int c2, int c3){
   double prob = 0;
   int c0 = n- c1-c2-c3;
   // dish 0
-  double prob0 = 1-(double)c0/n;
-  prob += 1/prob0;
+  double prob0 = (double)c0/n;
+  prob += prob0;
   // dish 1 - 3
-  if(c1>0)prob += prob0 * (double)c1/n * rec(c1-1,c2,c3);
-  if(c2>0)prob += prob0 * (double)c2/n * rec(c1+1,c2-1,c3);
-  if(c3>0)prob += prob0 * (double)c3/n * rec(c1,c2+1,c3-1);
+  if(c1>0)prob += (double)c1/n * rec(c1-1,c2,c3);
+  if(c2>0)prob += (double)c2/n * rec(c1+1,c2-1,c3);
+  if(c3>0)prob += (double)c3/n * rec(c1,c2+1,c3-1);
   dp[c1][c2][c3]=prob;
   cout<<c1<<c2<<c3<<prob<<endl;
   return dp[c1][c2][c3];
