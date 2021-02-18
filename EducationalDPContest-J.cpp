@@ -1,7 +1,7 @@
 //https://atcoder.jp/contests/dp/tasks/dp_j
 #include <bits/stdc++.h>
 #include <algorithm>
-#define rep(i,n)for(int i=0;i<(int)(n);i++)
+#define rep(i,n) for(int i=0;i<(int)(n);i++)
 using namespace std;
 using Graph=vector<vector<int> >;
 using p=pair<long,long>;
