@@ -5,5 +5,5 @@ Programming Competition
 190D - Diviser Enumeration
 
 **EducationalDPContest (Dynamic Programming)**
-J - 3 dimenational dp, probability transition
+J - 3 dimenational dp, probability transition/n
 K - Game Playing Order
