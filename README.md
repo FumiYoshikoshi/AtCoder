@@ -1,4 +1,8 @@
 # AtCoder
 Programming Competition
 
-ABC190D - Diviser Enumeration
+**AtCoder Biginner Contest**
+190D - Diviser Enumeration
+
+**EducationalDPContest (Dynamic Programming)**
+J - 3 dimenational dp, probability transition
