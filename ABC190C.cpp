@@ -14,7 +14,7 @@ int main() {
   rep(i,m){
     pair<int,int> p;
     cin>>p.first>>p.second;
-    cond[i]=p;
+    cond[i]=p; 
   }
 
   int k;
