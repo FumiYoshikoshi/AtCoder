@@ -11,12 +11,10 @@ const int64_t mod = 1000000007;
 int main() {
 
   int n,m;
-
   cin>>n>>m;
 
   vector<vector<int> > gems(n);
 
-  
   rep(i,m){
     int a,b;
     cin>>a>>b;
@@ -25,7 +23,6 @@ int main() {
   }
 
   int k;
-
   cin>>k;
   vector<int> c(k);
 
@@ -35,9 +32,27 @@ int main() {
     c.push_back(tmp-1);
   }
 
-  auto bfs = [&] (int s){
-    return 0;
+  auto bfs = [&] (int start){
+    queue<int> q;
+    q.push(start);
+    vector<int> cost(n,mod);
+    while(!q.empty()){
+      int next = q.front();
+      q.pop();
+      for(int nextnext:gems[next]){
+        if(cost[nextnext]>cost[next]+1){
+          cost[nextnext] = cost[next]+1;
+          q.push(nextnext);
+        }
+
+      }
+    }
+    rep(i,k)cost[i]=cost[c[i]];
+    return cost;
   };
+
+  vector<vector<int> > cost(n);
+  rep(i,k)cost[i]= bfs(c[i]);
 
   vector<vector<int> > dp(n);
 
