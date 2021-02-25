@@ -1,4 +1,6 @@
 // Still working
+// https://atcoder.jp/contests/abc190/tasks/abc190_e?lang=en
+// sample code: https://atcoder.jp/contests/abc190/submissions/19761405
 #include <bits/stdc++.h>
 #include <set>   
 #include <iostream>
@@ -33,6 +35,7 @@ int main() {
   }
 
   auto bfs = [&] (int start){
+    //shortest path to all of the reachable gems from the start gem
     queue<int> q;
     q.push(start);
     vector<int> cost(n,mod);
@@ -52,14 +55,29 @@ int main() {
   };
 
   vector<vector<int> > cost(n);
-  rep(i,k)cost[i]= bfs(c[i]);
+  rep(i,k)cost[i]= bfs(c[i]);// 
 
-  vector<vector<int> > dp(n);
+  vector<vector<int> > dp(1<<k,vector<int>(mod));
+  rep(i,k)dp[2<<i][i]= 1;
 
-  
-  
-  
-  cout<<" "<<endl;
+  int ans = mod;
+
+  rep(bit, 1<<k){
+    rep(i,k){
+      if(bit & 1<<i){ //when the i-th gem is to be included
+          int b = bit^1<<i;
+          rep(j,k){
+            if(dp[bit][i] > dp[b][j]+cost[i][j]){
+              dp[bit][i] = dp[b][j]+cost[i][j];
+              ans = dp[bit][i];
+            }
+          }
+      }
+    }
+  }
+
+  if(ans == mod)cout<<-1<<endl;
+  else cout<<ans<<endl;
 
   
   return 0;
