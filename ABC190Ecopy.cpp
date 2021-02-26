@@ -5,10 +5,12 @@
 #include <set>   
 #include <iostream>
 #include <algorithm>
-#include <cmath>
+//#include <cmath>
 #define rep(i,n)for(int i=0;i<(int)(n);i++)
 using namespace std;
 const int64_t mod = 1000000007;
+const int INF = 0x3fffffff;
+bool chmin(int& a, int b){ if(a > b){ a = b; return 1; } return 0; }
 
 int main() {
 
@@ -28,16 +30,18 @@ int main() {
   cin>>k;
   vector<int> c(k);
 
+
   rep(i,k){
     int tmp;
     cin>>c[i];
   }
 
+  
   auto bfs = [&] (int start){
     //shortest path to all of the reachable gems from the start gem
     queue<int> q;
     q.push(start);
-    vector<int> cost(n,mod);
+    vector<int> cost(n,INF);
     cost[start]=0;
     while(!q.empty()){
       int next = q.front();
@@ -51,41 +55,45 @@ int main() {
     }
     rep(i,k)cost[i]=cost[c[i]];
     //cout<<cost[2]<<endl;
-    cost.resize(k);
+    //cost.resize(k);
     return cost;
   };
 
   vector<vector<int> > cost(n);
+  //cost[i][j] <- shortest distance from i to j
   rep(i,k)cost[i]= bfs(c[i]);// 
 
-  vector<vector<int> > dp(1<<k,vector<int>(mod));
-  rep(i,k)dp[2<<i][i]= 1;
+  vector<vector<int> > dp(1<<k,vector<int>(k,INF));
+  for(int i=0 ; i<k ; i++){
+    dp[1<<i][i]=1;
+  }
 
-  int ans = mod;
+  int ans = INF;
 
   for(int bit = 1; bit < 1 << k; bit++){
     rep(i,k){
       if(bit & 1<<i){ //when the i-th gem is to be included
-          int b = bit^1<<i;
-          rep(j,k){
-            if(dp[bit][i] > dp[b][j]+cost[i][j]){
-              dp[bit][i] = dp[b][j]+cost[i][j];
-              ans = dp[bit][i];
-            }
-          }
+          //int b = bit^1<<i;
+          //const int bit2 = bit ^ 1 << i;
+          //for(int j = 0; j < k; j++) if(bit2 & 1 << j) chmin(dp[bit][i], dp[bit2][j] + cost[i][j]);
+
+          dp[bit][i] = min(dp[bit][i], dp[bit-1][i-1]+cost[i][i-1]);
       }
     }
   }
 
-  ans = *min_element(dp.back().begin(), dp.back().end());
+  //ans = *min_element(dp.back().begin(), dp.back().end());
 
-  if(ans == mod)cout<<-1<<endl;
-  else cout<<ans<<endl;
+  if(ans == INF)cout<<-1<<endl;
+  
+  else cout<<dp[(1<<k)-1][k-1]<<endl;
+  ans = *min_element(dp.back().begin(), dp.back().end());
+  if(ans == INF) ans = -1;
+  cout << ans << endl;
 
   
   return 0;
 
   
-
 
 }
