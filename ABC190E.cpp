@@ -16,7 +16,7 @@ int main() {
   int n,m;
   cin>>n>>m;
 
-  vector<vector<int> > gems(n);
+  vector<vector<int> > gems(n); 
 
   rep(i,m){
     int a,b;
