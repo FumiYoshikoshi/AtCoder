@@ -1,4 +1,3 @@
-// Still working
 // https://atcoder.jp/contests/abc190/tasks/abc190_e?lang=en
 // sample code: https://atcoder.jp/contests/abc190/submissions/19761405
 #include <bits/stdc++.h>
@@ -9,6 +8,8 @@
 #define rep(i,n)for(int i=0;i<(int)(n);i++)
 using namespace std;
 const int64_t mod = 1000000007;
+const int INF = 0x3fffffff;
+
 
 int main() {
 
@@ -27,65 +28,64 @@ int main() {
   int k;
   cin>>k;
   vector<int> c(k);
-
   rep(i,k){
-    int tmp;
-    cin>>c[i];
+    cin>>c[i];c[i]-=1;
   }
-
+  
   auto bfs = [&] (int start){
     //shortest path to all of the reachable gems from the start gem
     queue<int> q;
     q.push(start);
-    vector<int> cost(n,mod);
+    vector<int> cost(n,INF);
     cost[start]=0;
     while(!q.empty()){
       int next = q.front();
       q.pop();
-      for(int nextnext:gems[next]){
+      for(int nextnext : gems[next]){
         if(cost[nextnext]>cost[next]+1){
           cost[nextnext] = cost[next]+1;
           q.push(nextnext);
         }
       }
     }
-    rep(i,k)cost[i]=cost[c[i]];
-    //cout<<cost[2]<<endl;
-    cost.resize(k);
-    return cost;
+    vector<int> cost_re(k,0);
+    rep(i,k){
+      cost_re[i]=cost[c[i]];
+    }
+    return cost_re;
   };
 
-  vector<vector<int> > cost(n);
+  vector<vector<int> > cost(k);
+  //cost[i][j] <- shortest distance from i to j
   rep(i,k)cost[i]= bfs(c[i]);// 
 
-  vector<vector<int> > dp(1<<k,vector<int>(mod));
-  rep(i,k)dp[2<<i][i]= 1;
+  
+  vector<vector<int> > dp( 1<<k ,vector<int>(k , INF));
+  rep(i,k)dp[1<<i][i]=1;
 
-  int ans = mod;
+  int ans = INF;
 
-  for(int bit = 1; bit < 1 << k; bit++){
+  for(int bit = 1; bit < (1 << k); bit++){
     rep(i,k){
       if(bit & 1<<i){ //when the i-th gem is to be included
-          int b = bit^1<<i;
+          const int bit2 = bit ^ 1 << i;
           rep(j,k){
-            if(dp[bit][i] > dp[b][j]+cost[i][j]){
-              dp[bit][i] = dp[b][j]+cost[i][j];
-              ans = dp[bit][i];
+             if(bit2 & 1 << j) {
+               if(dp[bit][i] > dp[bit2][j] + cost[i][j]) dp[bit][i] = dp[bit2][j] + cost[i][j];
             }
           }
       }
     }
   }
 
-  ans = *min_element(dp.back().begin(), dp.back().end());
 
-  if(ans == mod)cout<<-1<<endl;
-  else cout<<ans<<endl;
 
+  if(dp[(1<<k)-1][k-1] == INF) ans = -1;
+  else ans =  dp[(1<<k)-1][k-1];
+  cout << ans << endl;
   
   return 0;
 
   
-
 
 }
