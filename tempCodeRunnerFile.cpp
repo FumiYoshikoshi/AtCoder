@@ -63,6 +63,8 @@ int main() {
   vector<vector<int> > dp( 1<<k ,vector<int>(k , INF));
   rep(i,k)dp[1<<i][i]=1;
 
+  int ans = INF;
+
   for(int bit = 1; bit < (1 << k); bit++){
     rep(i,k){
       if(bit & 1<<i){ //when the i-th gem is to be included
@@ -78,8 +80,9 @@ int main() {
 
 
 
-  int ans = *min_element(dp.back().begin(), dp.back().end());
-  if(ans==INF)ans=-1;
+  rep(i,1<<k)ans = min(dp[i][(1<<k)-1],ans);
+  //if(dp[(1<<k)-1][k-1] == INF) ans = -1;
+  //else ans =  dp[(1<<k)-1][k-1];
   cout << ans << endl;
   
   return 0;
