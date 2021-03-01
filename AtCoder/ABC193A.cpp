@@ -10,10 +10,6 @@ int main() {
   float a,b;
 
   cin>>a>>b;
-
-
-  
-  
   
   cout<<fixed<<setprecision(15)<<(a-b)/a*100<<endl;
 
