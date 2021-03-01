@@ -65,7 +65,7 @@ int main() {
 
   for(int bit = 1; bit < (1 << k); bit++){
     rep(i,k){
-      if(bit & 1<<i){ //when the i-th gem is to be included
+      if(bit & 1<<i){ //when the i-th gem is to be included;
           const int bit2 = bit ^ 1 << i;
           rep(j,k){
              if(bit2 & 1 << j) {
