@@ -19,7 +19,7 @@ int main() {
     cin>>a[i];
   }
 
-  int right = 0;
+  int left = 0;
   int ans = 0;
 
   auto sum = [&](int j){
@@ -31,8 +31,15 @@ int main() {
   };
 
   rep(i,n){
+    //b[a[i]-1]+=1;
+    //ans += i-sum(a[i]-1);
+  \
+   if((a[i]-1)<i)left += 1;
+    cout<<"i "<<i<<" left "<<left<<endl;
+    ans += (i-left);
     b[a[i]-1]+=1;
-    ans += i-sum(a[i]-1);
+    if(b[i]==1)left += 1;
+    cout<<ans<<endl;
   }
 
   
