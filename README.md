@@ -8,6 +8,7 @@ Programming Competition
 193A - Float division  
 194A - If else  
 194B - Double loop  
+194C - Sum of squared error (O(n) solution)  
 
 
 **EducationalDPContest (Dynamic Programming)**  
