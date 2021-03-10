@@ -9,6 +9,7 @@ Programming Competition
 194A - If else  
 194B - Double loop  
 194C - Sum of squared error (O(n) solution)  
+194D - Expected probability  
 
 
 **EducationalDPContest (Dynamic Programming)**  
