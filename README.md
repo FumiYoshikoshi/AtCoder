@@ -10,6 +10,9 @@ Programming Competition
 194B - Double loop  
 194C - Sum of squared error (O(n) solution)  
 194D - Expected probability  
+195A - Just comparison  
+195B - Range  (!)  
+195C - Number of comma to separate degits (!)  
 
 
 **EducationalDPContest (Dynamic Programming)**  
