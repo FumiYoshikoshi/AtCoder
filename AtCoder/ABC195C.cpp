@@ -1,10 +1,34 @@
-// still working!!
+// https://atcoder.jp/contests/abc195/tasks/abc195_c?lang=en
 #include <bits/stdc++.h>
 #include <set>   
 #define rep(i,n)for(int i=0;i<(int)(n);i++)
 using namespace std;
 const long long mod = 1000000007;
 
+int main() {
+
+  long long n;
+
+  cin>>n;
+
+  long long count = 0;
+
+  if(n>=1000)count += n-999;
+  if(n>=1000000)count += n-999999;
+  if(n>=1000000000)count += n-999999999;
+  if(n>=1000000000000)count += n-999999999999;
+  if(n>=1000000000000000)count += n-999999999999999; //10^15
+
+  cout<<count<<endl;
+
+  
+  return 0;
+
+  
+
+
+}
+/* Failed Codes: WHY DID I GET THIS WRONG
 int main() {
 
   long long n;
@@ -49,3 +73,4 @@ int main() {
 
 
 }
+*/
