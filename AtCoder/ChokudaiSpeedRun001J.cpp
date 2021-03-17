@@ -1,4 +1,4 @@
-// To be ameriolated
+// Still working 
 // https://atcoder.jp/contests/chokudai_S001/tasks/chokudai_S001_j?lang=en　　
 #include <bits/stdc++.h>
 #include <set>   
