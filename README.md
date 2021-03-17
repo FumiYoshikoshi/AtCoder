@@ -26,7 +26,11 @@ K - Game Playing Order
 Project_Euler_230 - Fibonacci Words. 
 
 # LeetCode  
+**Daily Challenge** 
 Best Time to Buy and Sell Stock - Dynamic Programming, optimized  
 Generate Random Point in a Circle  
+**Algorithms**  
+Two sums  
+ 
 
 
