@@ -27,9 +27,6 @@ int main() {
           }
       }
   }
-  //rep(i,k+1){
-    //cout<<dp[i];
-  //}
 
   if(dp[k]==0)cout<<"First"<<endl;
   else cout<<"Second"<<endl;

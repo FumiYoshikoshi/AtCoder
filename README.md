@@ -11,8 +11,8 @@ Programming Competition
 194C - Sum of squared error (O(n) solution)  
 194D - Expected probability  
 195A - Just comparison  
-195B - Range  (!)  
-195C - Number of comma to separate degits (!)  
+195B - Range    
+195C - Number of comma to separate degits   
 
 
 **EducationalDPContest (Dynamic Programming)**  
@@ -22,6 +22,9 @@ K - Game Playing Order
 **ChokudaiSpeedRun**  
 001J - Binary indexed tree (Bubble Sort) https://atcoder.jp/contests/chokudai_S001/tasks/chokudai_S001_j?lang=en　　
   
-# HackerRank. 
+# HackerRank   
 Project_Euler_230 - Fibonacci Words. 
+
+# LeetCode  
+Best Time to Buy and Sell Stock - Dynamic Programming, optimized  
 
