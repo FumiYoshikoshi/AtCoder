@@ -22,16 +22,20 @@ K - Game Playing Order
 **ChokudaiSpeedRun**  
 001J - Binary indexed tree (Bubble Sort) https://atcoder.jp/contests/chokudai_S001/tasks/chokudai_S001_j?lang=en　　
   
+
 # HackerRank   
 Project_Euler_230 - Fibonacci Words. 
-
+  
+  
 # LeetCode  
 **Daily Challenge**  
 0316 Best Time to Buy and Sell Stock - Dynamic Programming, optimized  
 0317 Generate Random Point in a Circle  
 0318 Wiggle Subsequence  
+  
 **Algorithms**  
 Two sums  
+Add Two Numbers - Pre-defined ListNode (iterator)  
  
 
 
