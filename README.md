@@ -35,8 +35,9 @@ Project_Euler_230 - Fibonacci Words.
 0319 Keys and Rooms - BFS  
   
 **Algorithms**  
-Two sums  
-Add Two Numbers - Pre-defined ListNode (iterator)  
+1 - Two sums  
+2 - Add Two Numbers - Pre-defined ListNode (iterator)  
+3 - Longest Substring Without Repeating Characters - (Not subsquence!) dynamic programming Linear Sol  
 
  
 
