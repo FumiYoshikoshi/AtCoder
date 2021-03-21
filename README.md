@@ -12,7 +12,10 @@ Programming Competition
 194D - Expected probability  
 195A - Just comparison  
 195B - Range    
-195C - Number of comma to separate degits   
+195C - Number of comma to separate degits  
+196A - Warm up  
+196B - Round down (but take number as a string!)  
+196C - Find the number that satisfy the condition  
 
 
 **EducationalDPContest (Dynamic Programming)**  
@@ -33,12 +36,13 @@ Project_Euler_230 - Fibonacci Words.
 0317 Generate Random Point in a Circle  
 0318 Wiggle Subsequence  
 0319 Keys and Rooms - BFS  
+0320 Design Underground System  
   
 **Algorithms**  
 1 - Two sums  
 2 - Add Two Numbers - Pre-defined ListNode (iterator)  
 3 - Longest Substring Without Repeating Characters - (Not subsquence!) dynamic programming Linear Sol  
-
+4 - Median of Two Sorted Arrays   
  
 
 
