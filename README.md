@@ -37,7 +37,8 @@ Project_Euler_230 - Fibonacci Words.
 0318 Wiggle Subsequence  
 0319 Keys and Rooms - BFS  
 0320 Design Underground System  
-0321 ReorderedPowerof2 - Permutation  
+0321 Reordered Power of 2 - Permutation  
+0322 Vowel Spellchecker - unordered map?  
   
 **Algorithms**  
 1 - Two sums  
