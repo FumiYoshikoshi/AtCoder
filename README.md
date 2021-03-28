@@ -42,6 +42,7 @@ Project_Euler_230 - Fibonacci Words.
 0325 Advantage Shuffle - sort vectors(lambda)  
 0326 Pacific Atlantic Water Flow - BFS (2 dimentional matrix)  
 0327 Palindromic Substrings - Similar to **Algorithms, 5**  
+0328 Reconstruct Original Digits from English  
   
 **Algorithms**  
 1 - Two sums  
