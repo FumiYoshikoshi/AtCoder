@@ -51,6 +51,7 @@ Project_Euler_230 - Fibonacci Words.
 3 - Longest Substring Without Repeating Characters - (Not subsquence!) dynamic programming Linear Sol  
 4 - Median of Two Sorted Arrays   
 5 - Longest Palindromic Substring - Manacher's algorithm modified, O(|N|) solution  
+7 - Reverse Integer - Reverse bits  
  
 
 
