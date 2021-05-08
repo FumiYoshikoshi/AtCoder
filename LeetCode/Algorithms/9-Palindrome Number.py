@@ -8,8 +8,5 @@ class Solution(object):
                 boo = False
                 return boo
         return boo
-        """
-        :type x: int
-        :rtype: bool
-        """
+        
         
