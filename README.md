@@ -45,6 +45,8 @@ Project_Euler_230 - Fibonacci Words.
 0328 Reconstruct Original Digits from English  
 0330 Russian Doll Envelopes - LIS using **bisect**  
 0606 Longest Consecutive Sequence - Priority Queue  
+0607 Min Cost Climbing Stairs - dp  
+0610 My Calendar I - Binary Tree implementation  
   
 **Algorithms**  
 1 - Two sums  
