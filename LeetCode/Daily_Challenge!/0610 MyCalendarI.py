@@ -7,6 +7,7 @@ class Node:
         self.left = None
         self.right = None
         
+        
 
     def insert(self, node):
         if node.start >= self.end:

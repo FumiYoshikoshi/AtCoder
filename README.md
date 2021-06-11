@@ -47,6 +47,7 @@ Project_Euler_230 - Fibonacci Words.
 0606 Longest Consecutive Sequence - Priority Queue  
 0607 Min Cost Climbing Stairs - dp  
 0610 My Calendar I - Binary Tree implementation  
+0611 Stone Game VII - dp  
   
 **Algorithms**  
 1 - Two sums  
