@@ -51,6 +51,7 @@ Project_Euler_230 - Fibonacci Words.
 0613 Palindrome Pairs  
 0614 Maximum Units on a Truck  
 0615 Matchsticks to Square - DFS solution(dp solution to be tested)  
+0616 Generate Parentheses - Brute force solution(slow)  
   
 **Algorithms**  
 1 - Two sums  
