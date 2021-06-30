@@ -63,6 +63,7 @@ Project_Euler_230 - Fibonacci Words.
 5 - Longest Palindromic Substring - Manacher's algorithm modified, O(|N|) solution  
 7 - Reverse Integer - Reverse bits  
 9 - Palindrome Number  
+1047 - Remove All Adjacent Duplicates In String - STILL WORKING!!  
  
 
 
