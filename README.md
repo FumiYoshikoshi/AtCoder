@@ -32,7 +32,7 @@ Project_Euler_230 - Fibonacci Words.
   
 # LeetCode  
 **Daily Challenge**  
-0316 Best Time to Buy and Sell Stock - Dynamic Programming, optimized  
+0316 Best Time to Buy and Sell Stock - Dynamic Programming, optimized (Second run solution)  
 0317 Generate Random Point in a Circle  
 0318 Wiggle Subsequence  
 0319 Keys and Rooms - BFS  
@@ -63,6 +63,7 @@ Project_Euler_230 - Fibonacci Words.
 5 - Longest Palindromic Substring - Manacher's algorithm modified, O(|N|) solution  
 7 - Reverse Integer - Reverse bits  
 9 - Palindrome Number  
+1047 - Remove All Adjacent Duplicates In String - STILL WORKING!!  
  
 
 
