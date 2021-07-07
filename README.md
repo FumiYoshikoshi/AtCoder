@@ -24,7 +24,14 @@ K - Game Playing Order
 
 **ChokudaiSpeedRun**  
 001J - Binary indexed tree (Bubble Sort) https://atcoder.jp/contests/chokudai_S001/tasks/chokudai_S001_j?lang=en　　
-  
+
+**Typical90**  
+001_Yokan_Party  Binary search  
+002_Encyclopedia_of_Parentheses  Bit search  
+003_Longest_Circular_Road BFS  
+004_Cross_Sum [Solved]  
+006_Smallest_Subsequence  
+010_Score_Sum_Queries [Solved]  
 
 # HackerRank   
 Project_Euler_230 - Fibonacci Words. 
