@@ -1,6 +1,7 @@
 //https://atcoder.jp/contests/typical90/tasks/typical90_d
 
 #include <bits/stdc++.h>
+#include <bits/stdc++.h>
 #include <algorithm>
 #define rep(i,n)for(int i=0;i<(int)(n);i++)
 using namespace std;
