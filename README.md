@@ -31,6 +31,7 @@ K - Game Playing Order
 003_Longest_Circular_Road BFS  
 004_Cross_Sum [Solved]  
 006_Smallest_Subsequence  
+007_CP_Classes [Solved] 
 010_Score_Sum_Queries [Solved]  
 
 # HackerRank   
