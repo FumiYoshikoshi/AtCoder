@@ -32,6 +32,7 @@ K - Game Playing Order
 004_Cross_Sum [Solved]  
 006_Smallest_Subsequence  
 007_CP_Classes [Solved] 
+008_AtCounter [Solved] 
 010_Score_Sum_Queries [Solved]  
 
 # HackerRank   
