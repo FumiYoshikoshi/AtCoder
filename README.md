@@ -34,6 +34,7 @@ K - Game Playing Order
 007_CP_Classes [Solved] 
 008_AtCounter [Solved] 
 010_Score_Sum_Queries [Solved]  
+012_Red_Painting (Union Find)  
 
 # HackerRank   
 Project_Euler_230 - Fibonacci Words. 
